@@ -1,0 +1,320 @@
+/*http://color.romanuke.com/tsvetovaya-palitra-3798/*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Sonsie+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Caveat);
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+h2{
+    font-size: 1.875rem;
+}
+
+html {
+    font: 1em/1.5 "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+
+body {
+    font-size: 1.3em;
+}
+
+header {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(/web/images/main-fon.jpg) center no-repeat;
+    /* Image Credit: Unsplash.me */
+    background-size: cover;
+}
+header .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+header h1, header h2 {
+    margin: 0;
+}
+header h2 {
+    text-transform: uppercase;
+    margin-top: -.5em;
+}
+
+.site {
+    padding: 5em 0;
+    text-align: center;
+    background-color: #efefef;
+    font-size: .8em;
+    color: #444;
+    position:relative
+}
+.site a {
+    color: #666;
+    text-decoration: none;
+}
+.site a:hover {
+    color: #222;
+}
+
+nav{
+    position:absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(45deg, #ff9200 0%, #ffc900 50%, #ff9200 100%);
+    width:100%
+}
+nav a{
+    /*padding:10px 30px;*/
+    font-size:1.3em;
+    display:inline-block
+}
+nav a:hover{
+    background:#ff9200;
+    color:#fff
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #ff9200;
+}
+.navbar-inverse .navbar-brand {
+    color: #3c3c3c;
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color: #000000;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #3c3c3c;
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+}
+
+
+/*Главная страница контент*/
+.index__shop__title{
+    font-family: 'Caveat', cursive;
+    text-align: justify;
+}
+
+.index__shop__slider{
+    margin-bottom: 15px;
+}
+.sl__slide__shop{
+    /*width: 500px;*/
+    max-height: 300px;
+}
+.sl__slide__shop img{
+    width: 100%;
+    height: auto;
+}
+/*блок с выводом меню и товаров*/
+.dcjq-parent-li a span{
+    font-size: 1.3rem;
+    padding: 3px 11px 4px 7px;
+    border-radius: 16px;
+    margin: 10px 0 0 0;
+}
+.wrap__shop__second__block{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+.left__block__shop{
+    flex-basis: 30%;
+}
+.right__block__shop{
+    flex-basis: 70%;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+.left__block__shop .catalog li a{
+    color: #000;
+    font-family: 'Caveat', cursive;
+    font-size: 1.8rem;
+}
+.left__block__shop .catalog li{
+    /*background: #ff94005e;*/
+    /*cursor: pointer;*/
+    border-bottom: 1px solid #ff6f5b;
+    list-style-type: none;
+}
+/*.badge{*/
+    /*margin: 14px 0 0 0;*/
+/*}*/
+
+.popular__goods__title, .category__title{
+
+    /*width: 58%;*/
+    display: flex;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+    /*font-weight: bold;*/
+    margin-bottom: 29px;
+}
+.popular__goods__title h2, .category__title h2 {
+    border-bottom: 2px solid #ff6f5b;
+    padding: 0 30px 5px 30px;
+}
+.products__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card__product__wrap{
+    flex-basis: 30%;
+    border: 1px solid #ffc500;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.card__product__wrap a{
+    text-decoration: none;
+}
+.card__product__wrap a .cart__product__img{
+    max-width: 216px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.card__product__wrap a .cart__product__img img{
+    width: 100%;
+    height: auto;
+}
+.cart__product__name{
+    margin-top: 5px;
+}
+.cart__product__name p{
+    border-bottom: 1px solid #ffc500;
+}
+.cart__product__name, b h3{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #000;
+}
+.cart__product__price, .cart__product__card{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #000;
+}
+.cart__product__card{
+    /*display: inline-flex;*/
+}
+
+.custom-btn {
+    padding: 10px 25px;
+    font-family: 'Caveat', cursive;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: 500;
+    background: transparent;
+    /*outline: none !important;*/
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+/**** BTN No. 5 ****/
+.btn-5 {
+    /*width: 130px;*/
+    height: 40px;
+    /*line-height: 42px;*/
+    padding: 0;
+    border: none;
+}
+.btn-5 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 2px 7px 5px 5px;
+    color: #444;
+    font-size: 1.5rem;
+}
+.btn-5:before, .btn-5:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #ff9600;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.btn-5:before {
+    height: 50%;
+    width: 2px;
+}
+.btn-5:after {
+    width: 20%;
+    height: 2px;
+}
+.btn-5:hover:before {height: 100%;}
+.btn-5:hover:after {width: 100%;}
+.btn-5 span:before, .btn-5 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #ff9600;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.btn-5 span:before {
+    width: 2px;
+    height: 50%;
+}
+.btn-5 span:after {
+    width: 20%;
+    height: 2px;
+}
+.btn-5 span:hover:before {height: 100%;}
+.btn-5 span:hover:after {width: 100%;}
+
+/*Страница просотра категорий с товарами*/
+.wrap__category__block{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+.left__block__category{
+    flex-basis: 30%;
+}
+.right__block__category{
+    flex-basis: 70%;
+}
+.no__products__block h2{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+/*Страница просмотра продукта*/
+.wrap__product__page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left__block__category{
+    flex-basis: 30%;
+}
+.right__block__product{
+    flex-basis: 70%;
+}
+
+/*корзина*/
+.del-item{
+    cursor: pointer;
+}
